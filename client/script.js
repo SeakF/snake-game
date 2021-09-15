@@ -187,7 +187,7 @@ document.getElementById('accept-button').addEventListener('click', async (e) => 
     let nickname = document.getElementById('nickname').value
 
     try {
-        let result = await fetch('http://localhost:5500/routes/points', {
+        let result = await fetch('//snake.fgozdz.pl/routes/points', {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json'
@@ -202,7 +202,7 @@ document.getElementById('accept-button').addEventListener('click', async (e) => 
 window.addEventListener('load', async () => {
     let leaderboard = document.getElementById('score-table')
     try {
-        let result = await fetch('http://localhost:5500/routes/points', {
+        let result = await fetch('//snake.fgozdz.pl/routes/points', {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json'
