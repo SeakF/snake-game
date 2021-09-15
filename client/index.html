@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='style.css'>
+    <title>Snake</title>
+</head>
+<body>
+    <section>
+        <article>
+            <div id='snake-head' class="snake-element"></div>
+        </article>
+        <div class="points">0</div>
+        <div class="info">Press W/A/S/D to start the game and control snake</div>
+
+        <div class="end-screen">
+            <span class="score">Your score:</span>
+            <span>Enter your name:</span>
+            <form>
+                <input type="text" id='nickname' maxlength = "6" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
+                <button type="submit" id='accept-button'>SEND</button>
+            </form>
+            <button id='reset'>PLAY AGAIN</button>
+        </div>
+
+        <div class="leaderboard">
+            <div class="leaderboard-title">Top 10 scores:</div>
+            <div class="leaderboard-scores" id='score-table'>
+            </div>
+        </div>
+    </section>
+
+    <script src='script.js' type="module"></script>
+</body>
+</html>
